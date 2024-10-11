@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'RedHatDisplay';
+    src: url('./assets/fonts/RedHatDisplay-Italic-VariableFont_wght.ttf') format('ttf'),
+        url('./assets/fonts/RedHatDisplay-VariableFont_wght.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter-VariableFont_opsz\,wght.ttf') format('ttf'),
+        url('./assets/fonts/Inter-Italic-VariableFont_opsz\,wght.ttf') format('ttf');
+    /* font-style: normal; */
+}
