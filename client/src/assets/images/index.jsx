@@ -88,6 +88,15 @@ export { default as User } from './icons/Name=User.svg'
 export { default as Vacation } from './icons/Name=Vacation.svg'
 export { default as Video } from './icons/Name=Video.svg'
 export { default as Web } from './icons/Name=Web.svg'
+export { default as VNFlag } from './icons/VNFlag.webp'
 
 // Logo
 export { default as logo } from './logo/logo.svg'
+export { default as cpLogo } from './logo/cpLogo.svg' 
+
+export { default as bgAuth } from './background/bgAuth.png'
+export { default as lineBanner } from './background/line_banner.svg'
+export { default as bgGrid } from './background/bg_grid_auth.svg'
+export { default as Employer } from './background/bussiness.webp'
+export { default as Candidate } from './background/student.webp'
+

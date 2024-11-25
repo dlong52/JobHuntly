@@ -1,41 +1,35 @@
-import {
-    HomeIcon,
-    UserGroupIcon,
-    CurrencyDollarIcon,
-    BriefcaseIcon,
-    BuildingOffice2Icon,
-    NewspaperIcon
-} from '@heroicons/react/24/outline';
+import { CommonIcon } from "../ui";
+
 const sidebarAdminRoutes = [
     {
         path: '/admin',
-        name: 'Dashboard',
-        icon: HomeIcon,
+        name: 'Trang chủ',
+        icon: CommonIcon.Dashboard,
     },
     {
         path: '/admin/post',
-        name: 'Post',
-        icon: NewspaperIcon,
+        name: 'Tuyển dụng',
+        icon: CommonIcon.Newspaper,
     },
     {
         path: '/admin/category',
-        name: 'Category',
-        icon: BriefcaseIcon,
+        name: 'Lĩnh vực',
+        icon: CommonIcon.Feed,
     },
     {
         path: '/admin/company',
-        name: 'Company',
-        icon: BuildingOffice2Icon,
+        name: 'Doanh nghiệp',
+        icon: CommonIcon.Business,
     },
     {
         path: '/admin/revenue',
-        name: 'Revenue',
-        icon: CurrencyDollarIcon,
+        name: 'Doanh thu',
+        icon: CommonIcon.LocalAtm,
     },
     {
-        path: '/admin/profile',
-        name: 'Users',
-        icon: UserGroupIcon,
+        path: '/admin/user',
+        name: 'Người dùng',
+        icon: CommonIcon.Group,
     },
 ];
 

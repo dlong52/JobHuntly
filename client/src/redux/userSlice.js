@@ -1,29 +1,42 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-    name: '',
-    email: '',
-    accessToken: '',
-    isLoading: false,
-}
-
+  user_id: "",
+  username: "",
+  email: "",
+  address: "",
+  phone_number: "",
+  image: "",
+  accessToken: "",
+  role: "",
+  isLoading: false,
+};
 export const userSlide = createSlice({
-    name: 'user',
-    initialState,
-    reducers: {
-        updateUser: (state, action) => {
-            const {name, email, accessToken} = action.payload
-            
-            state.name = name || email;
-            state.email = email;
-            state.accessToken = accessToken
-        },
-        resetUser: (state) => {
-            state.name = '';
-            state.email = '';
-            state.accessToken = ''
-        }
-    }
-})
-export const { updateUser, resetUser } = userSlide.actions
-export default userSlide.reducer
+  name: "user",
+  initialState,
+  reducers: {
+    updateUser: (state, action) => {
+      const {_id, profile, email, accessToken, role } = action.payload;
+      state.user_id = _id;
+      state.username = profile?.name || email;
+      state.email = email;
+      state.address = "address";
+      state.image = "image";
+      state.phone_number = "phone_number";
+      state.accessToken = accessToken;
+      state.role = role;
+    },
+    resetUser: (state) => {
+      state.user_id = null;
+      state.username = null;
+      state.email = null;
+      state.address = null;
+      state.phone_number = null;
+      state.accessToken = null;
+      state.image = null;
+      state.role = null;
+    },
+  },
+});
+export const { updateUser, resetUser } = userSlide.actions;
+export default userSlide.reducer;

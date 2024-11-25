@@ -10,6 +10,8 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
+.env
+jobhuntly-a8600-firebase-adminsdk-53hy3-d540d265bc.json
 *.local
 
 # Editor directories and files

@@ -1,0 +1,8 @@
+export {default as Category } from './Category'
+export {default as Logo } from './Logo'
+export {default as Widget } from './Widget'
+export {default as CompanyFilter } from './CompanyFilter'
+export {default as CompanyList } from './CompanyList'
+export {default as CompanyItem } from './CompanyItem'
+export {default as Pagination } from './Pagination'
+export {default as DefautAvatar } from './DefautAvatar'

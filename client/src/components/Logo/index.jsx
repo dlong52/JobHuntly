@@ -3,9 +3,9 @@ import { logo } from '../../assets/images'
 
 const Logo = () => {
     return (
-        <div className="flex gap-x-2 px-6 py-8">
-            <img src={logo} alt="Logo" />
-            <span className='font-RedHatDisplay text-[24px] font-semibold'>JobHuntly</span>
+        <div className="flex items-center gap-x-2 h-[75px]">
+            <img src={logo} alt="Logo"  className='h-[36px]'/>
+            <span className='font-MonumentExtended text-[24px] font-semibold text-neutrals-100'>JobHuntly</span>
         </div>
     )
 }
